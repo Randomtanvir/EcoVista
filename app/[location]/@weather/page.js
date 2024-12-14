@@ -12,7 +12,7 @@ const WeatherPage = async ({
   if (resolved?.lat && resolved?.lon) {
     return <WeatherDetails lat={resolved.lat} lon={resolved.lon} />;
   } else {
-    return <NoLocationInfo />;
+    return <NoLocationInfo location={location} />;
   }
 };
 

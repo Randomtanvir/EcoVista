@@ -12,7 +12,7 @@ const AQIpage = async ({
   if (resolved?.lat && resolved?.lon) {
     return <AQIdetails lat={resolved.lat} lon={resolved.lon} />;
   } else {
-    return <NoLocationInfo />;
+    return <NoLocationInfo location={location} />;
   }
 };
 

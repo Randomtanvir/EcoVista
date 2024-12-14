@@ -2,11 +2,11 @@ import React from "react";
 import Card from "./Card";
 import Link from "next/link";
 
-const NoLocationInfo = () => {
+const NoLocationInfo = ({ location }) => {
   return (
     <Card>
       <p className="text-center bg-slate-600 py-1 flex items-center justify-center px-2 text-sm rounded text-zinc-300 mt-6  ">
-        No LocationIn found
+        {location} location not found
       </p>
       <Link
         className="bg-slate-600 py-1 flex items-center justify-center px-2 text-sm rounded text-zinc-300 mt-6 hover:bg-slate-700 transition-all"

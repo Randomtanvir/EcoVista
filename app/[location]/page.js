@@ -12,7 +12,7 @@ const LocationPage = async ({
   if (resolved?.lat && resolved?.lon) {
     return <LocationDetails lat={resolved.lat} lon={resolved.lon} />;
   } else {
-    return <NoLocationInfo />;
+    return <NoLocationInfo location={location} />;
   }
 };
 

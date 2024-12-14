@@ -1,5 +1,6 @@
 "use client";
 
+import LoadingSpin from "@/components/LoadingSpin";
 import Image from "next/image";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -33,7 +34,10 @@ const LocationDedctor = () => {
             width={500}
             className="border rounded-md my-4"
           />
-          <p className="text-4xl text-center">Detecting Location...</p>
+          <div className="text-2xl">
+            loading...
+            <LoadingSpin />
+          </div>
         </>
       )}
     </div>
