@@ -35,7 +35,7 @@ const LocationDedctor = () => {
             className="border rounded-md my-4"
           />
           <div className="text-2xl">
-            loading...
+            Loading...
             <LoadingSpin />
           </div>
         </>
